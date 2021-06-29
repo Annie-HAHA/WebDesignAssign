@@ -1,0 +1,32 @@
+.mapouter {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  width: 900px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 900px;
+}
+
+.location h5 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.location p {
+  margin-top: 20px;
+  margin-left: 470px;
+  font-weight: bold;
+}
+
+.location h6 {
+  text-align: center;
+  margin-top: 20px;
+}

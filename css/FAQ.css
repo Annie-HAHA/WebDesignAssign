@@ -1,0 +1,58 @@
+.faqBody {
+  margin-bottom: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.faqBody h5 {
+  margin-top: 50px;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+/*---------------Accordian----------------*/
+
+.accordian {
+  background-color: #262223;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 85%;
+  text-align: left;
+  border: 1px solid white;
+  transition: 0.4s; /* hovering effect*/
+  font-family: sans-serif;
+  outline: none;
+  margin-left: 100px;
+}
+
+.panel {
+  padding: 30px 20px;
+  background-color: rgb(235, 144, 247);
+  display: none;
+  overflow: hidden;
+  width: 85%;
+  margin-left: 100px;
+}
+
+.panel p {
+  font-family: sans-serif;
+  color: black;
+}
+
+.active,
+.accordian:hover {
+  background-color: #4d4848 !important;
+  outline: none;
+}
+
+.accordian::after {
+  content: "\02795"; /*(+) sign */
+  font-size: 15px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\2796"; /* (-) sign */
+}

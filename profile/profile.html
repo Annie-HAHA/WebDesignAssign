@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mr Bakery</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db13e30a37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flamenco&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="announcement">
+        <p style="text-align: center;">#DUDUKRUMAH #STAYATHOME #Covid-19</p>
+      </div>
+      <div class="main-map-gift">
+        <i
+          class="fa fa-map-marker fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/location.html'"
+        ></i>
+        <i
+          class="fa fa-gift fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/giftredeem.html'"
+        ></i>
+      </div>
+      <div class="main-logo">
+        <img
+          src="../images/logo.png"
+          alt="Mr Bakery Logo"
+          class="logo"
+          width="300"
+          height="300"
+        />
+      </div>
+      <div class="searchbar">
+        <input type="text" class="search" placeholder="Search..." />
+        <a href="#" id="search"><i class="fas fa-search"></i></a>
+        <i
+          class="fas fa-sign-in-alt fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/Login.html'"
+        ></i>
+        <i
+          class="fas fa-shopping-cart fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/addtocart.html'"
+        ></i>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/homepage.html">Home</a>
+        </li>
+        <li class="nav-item mx-2 dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Product Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('brownies', true)"
+              >Brownies</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('cheesecake', true)"
+              >Cheese Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('icecream', true)"
+              >Ice Cream Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('jellycake', true)"
+              >Jelly Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('macarons', true)"
+              >Macarons</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('tart', true)"
+              >Tarts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/customiz_form.html">Customize Cake</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../profile/profile.html">Member</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/promotion_newsalert.html">Promo</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/delivery.html">Delivery</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/jobvacancies.html">Job Vacancies Form</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/luckydraw1.html">Lucky Draw</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/catering.html">Catering</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/FAQ.html">FAQ</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/feedbackform.html">Feedback</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../bakingClass/class.html">Baking class</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="myaccount">
+      <h5>My Account</h5>
+      <div class="myaccount-content">
+        <ul class="profile-side-nav">
+          <li>
+            <i class="fa fa-user"></i>
+            <a href="#">Information</a>
+            <!--../profile/profile.html--> 
+          </li>
+          <li>
+            <i class="fa fa-map-marker"></i>
+            <a href="../profile/address.html">Address</a>
+          </li>
+          <li>
+            <i class="fa fa-history"></i>
+            <a href="../profile/history.html">Order history</a>
+          </li>
+          <li>
+            <i class="fa fa-heart-o"></i
+            ><a href="../profile/deliverystatus.html">Delivery status</a>
+          </li>
+          <li>
+            <i class="fa fa-comment-o"></i><a href="../profile/reviews.html">Reviews</a>
+          </li>
+          <li>
+            <i class="fa fa-sign-out"></i><a href="../navBar/homepage.html">Sign out</a>
+          </li>
+        </ul>
+
+        <form method="post" name="myacc" class="personal-info"  onsubmit="alert('Your details has been submitted successfully!')" onreset="alert('Your details has been deleted successfully!')">
+          <h4 class="row">Update Details</h4>
+          <div class="row">
+            <img src="../images/icon/profile.png" />
+          </div>
+          <div class="row">
+            <label for="img" class="profile-upload">
+              <i class="fa fa-cloud-upload"></i> Upload profile picture
+            </label>
+            <input id="img" type="file" name="img" accept="image/*"/>
+          </div>
+          <div class="row">
+            <label for="gender" class="padding-right">Gender : </label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              class="padding-side"required
+            />
+            <label for="male" class="padding-side">Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              class="padding-side"
+            />
+            <label for="female" class="padding-side">Female</label>
+          </div>
+
+          <div class="row">
+            <label for="name" class="padding-right">Full Name : </label>
+            <input type="text" id="name" name="name" class="padding-side"  placeholder="e.g.Angel"required/>
+          </div>
+
+          <div class="row">
+            <label for="username" class="padding-right">User Name : </label>
+            <input type="text" id="name" name="username" class="padding-side" placeholder="e.g.angel67" required/>
+          </div>
+
+          <div class="row">
+            <label for="email" class="padding-right">Email : </label>
+            <input type="text" id="email" name="email" class="padding-side"  placeholder="e.g.angel@gmail.com"required/>
+          </div>
+
+          <div class="row">
+            <label for="password" class="padding-right">Password : </label>
+            <input
+              type="text"
+              id="password"
+              name="password"
+              class="padding-side"required
+            />
+          </div>
+
+          <div class="row">
+            <label for="newpassword" class="padding-right"
+              >New Password :
+            </label>
+            <input
+              type="text"
+              id="newpassword"
+              name="newpassword"
+              class="padding-side"required
+            />
+          </div>
+
+          <div class="row">
+            <label for="phonenumber" class="padding-right"
+              >Phone Number :
+            </label>
+            <input
+              type="text"
+              id="phonenumber"
+              name="phonenumber"
+              class="padding-side" placeholder="e.g.017-6543456" required
+            />
+          </div>
+
+          <div class="row">
+            <label for="birthday" class="padding-right">Birthday :</label>
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              class="padding-side"required
+            />
+          </div>
+
+          <div class="row">
+            <input type="submit" value="Save" />
+            <input type="reset" value="Cancel" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div>
+        <div class="footer-signup">
+          <p>SIGN UP TO GET SPECIAL OFFERS AND UPDATES</p>
+          <div class="footer-mail">
+            <form>
+              <input
+                type="email"
+                id="footer-email"
+                placeholder="Enter email..."
+              />
+              <button type="submit" id="footer-button">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer0">
+          <div class="footer1">
+            <a href="../footer/aboutus.html"><p>About Mr Bakery</p></a>
+            <a href="../footer/FAQ.html"><p>FAQ</p></a>
+            <a href="../footer/contactus.html"><p>Contact Us</p></a>
+            <a href="../footer/delivery.html"><p>Delivery</p></a>
+          </div>
+
+          <div class="footer2">
+            <p>We open daily 9am to 10pm!</p>
+            <p><a href="tel:+603 1000 1000">Phone:+603 1000 1000</a></p>
+            <p>
+              <a href="mailto:mrbakery@gmail.com">Email:mrbakery@gmail.com</a>
+            </p>
+          </div>
+          <div class="mrbakery">
+            <p class="mrbakery1">Mr Bakery</p>
+            <p class="mrbakery2">
+              Petaling Jaya, <br />53000, Kuala Lumpur, Malaysia.
+            </p>
+          </div>
+          <div class="footer-icon">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/?stype=lo&jlou=AfcFIovjHT1aS5YG9LOYstbUhKL0WxzpJZl2_10W14bQpnWdRrVIBfeeokVugnwa4Qcq9xZmCK-NWZeH5bN1fG4EjQYStIT7mAMLpWnw5cmPfA&smuh=593&lh=Ac92qSujogaQVrRL" id="fb"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=zh-cn" id="ins"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" id="yt"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/login" id="twi"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &#169; Mr Bakery 2020
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>

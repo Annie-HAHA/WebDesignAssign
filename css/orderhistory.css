@@ -1,0 +1,68 @@
+.myorderhistory {
+  margin-bottom: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.myorderhistory h5 {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.myorderhistory-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding: 10px;
+  border: 1px solid rgb(173, 167, 167);
+}
+
+.orderhistory-info {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.orderhistory .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.myorder table,
+.myorder th,
+.myorder td {
+  width: 30%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+#received {
+  color: red;
+}
+
+#status {
+  color: chocolate;
+}
+
+.invoice-btn {
+  background-color: salmon !important;
+  border: none;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.invoice-btn a {
+  color: white;
+}
+
+.invoice-btn:hover {
+  opacity: 1;
+}

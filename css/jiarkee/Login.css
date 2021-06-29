@@ -1,0 +1,56 @@
+.container-fluid {
+    background-image: url("../images/jiarkee/login-background.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 10;
+    padding-bottom: 10;
+  }
+  .container-fluid h1 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    padding: 10 0 15 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+  }
+  .container-fluid label {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: large;
+    color: indigo;
+    padding-left: 5;
+  }
+  .container-fluid input[type="email"],
+  .container-fluid input[type="password"] {
+    width: 100%;
+    padding: 13 0 13 15;
+    margin: 10 0 20 0;
+    box-sizing: border-box;
+    border: lightgrey 1px solid;
+    border-radius: 1px;
+    background-color: white;
+  }
+  .container-fluid button {
+    width: 20%;
+    padding: 10 15 10 15;
+    margin-bottom: 15;
+    margin-left: 80%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1px;
+    color: white;
+    background-color: burlywood;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .container-fluid button:hover {
+    background-color: rgb(121, 63, 9);
+  }
+  .box {
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20 20 20 20;
+    width: 60%;
+    background-color: rgb(255, 255, 255, 0.7);
+  }

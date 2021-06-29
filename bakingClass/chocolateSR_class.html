@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Malaysia, mrbakery, Bakery, cake" />
+    <title>Mr Bakery</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="../css/keyun/baking-class.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db13e30a37.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="announcement">
+        <p style="text-align: center;">#DUDUKRUMAH #STAYATHOME #Covid-19</p>
+      </div>
+      <div class="main-map-gift">
+        <i
+          class="fa fa-map-marker fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/location.html'"
+        ></i>
+        <i
+          class="fa fa-gift fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/giftredeem.html'"
+        ></i>
+      </div>
+      <div class="main-logo">
+        <img
+          src="../images/logo.png"
+          alt="Mr Bakery Logo"
+          class="logo"
+          width="300"
+          height="300"
+        />
+      </div>
+      <div class="searchbar">
+        <input type="text" class="search" placeholder="Search..." />
+        <a href="#" id="search"><i class="fas fa-search"></i></a>
+        <i
+          class="fas fa-sign-in-alt fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/Login.html'"
+        ></i>
+        <i
+          class="fas fa-shopping-cart fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/addtocart.html'"
+        ></i>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/homepage.html">Home</a>
+        </li>
+        <li class="nav-item mx-2 dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Product Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('brownies', true)"
+              >Brownies</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('cheesecake', true)"
+              >Cheese Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('icecream', true)"
+              >Ice Cream Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('jellycake', true)"
+              >Jelly Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('macarons', true)"
+              >Macarons</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('tart', true)"
+              >Tarts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/customiz_form.html">Customize Cake</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../profile/profile.html">Member</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/promotion_newsalert.html">Promo</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/delivery.html">Delivery</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/jobvacancies.html">Job Vacancies Form</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/luckydraw1.html">Lucky Draw</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/catering.html">Catering</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/FAQ.html">FAQ</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/feedbackform.html">Feedback</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../bakingClass/class.html">Baking class</a>
+        </li>
+      </ul>
+    </nav>
+    <article class="abtclass">
+      <div class="row1">
+        <div class="cake-img">
+          <img
+            src="../images/keyun/switch roll cake1.jpg"
+            alt="chocolate switch roll"
+            width="600"
+            height="500"
+          />
+        </div>
+        <div class="actinfo-1">
+          <h1>Activity Information</h1>
+          <p>
+            Item: Chocolate Switch Roll Cake <br />
+            Duratiion: 3 hours <br />
+            Maximum number of people: 5 <br />
+            Price: RM 200 <br />
+          </p>
+        </div>
+        <div class="actinfo-2">
+          <h1>Available Time</h1>
+          <p>
+            Thur 10am - 1pm <br />
+            Thur 2pm - 5pm <br />
+          </p>
+        </div>
+      </div>
+      <div>
+        <br />
+        <hr />
+        <hr />
+        <h1 class="abtclassT">About Class</h1>
+        <hr />
+        <hr />
+        <div class="abtclass-info">
+          <p>
+            Age group: 13 and above <br />
+            Language: English, Chinese <br />
+            Level: Beginner <br />
+          </p>
+          <ol>
+            <h3><b> Lesson Method: </b></h3>
+            <li>Method on making the chocolate switch roll.</li>
+            <li>Learn how to make cream cheese frosting.</li>
+            <li>Learn how to make buttercream coating.</li>
+            <li>Learn how to decorate the cake.</li>
+            <li>Simple technique in cake arrangement.</li>
+            <li>
+              Understand how to stack,spread and coat evenly and smoothly.
+            </li>
+          </ol>
+        </div>
+        <br />
+        <div class="row1">
+          <div class="col-back">
+            <a href="../bakingClass/class.html"> Back </a>
+          </div>
+          <div class="col-book">
+            <a href="../bakingClass/booking_class.html"> Book Now </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div>
+        <div class="footer-signup">
+          <p>SIGN UP TO GET SPECIAL OFFERS AND UPDATES</p>
+          <div class="footer-mail">
+            <form>
+              <input
+                type="email"
+                id="footer-email"
+                placeholder="Enter email..."
+              />
+              <button type="button" id="footer-button">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer0">
+          <div class="footer1">
+            <a href="../footer/aboutus.html"><p>About Mr Bakery</p></a>
+            <a href="../footer/FAQ.html"><p>FAQ</p></a>
+            <a href="../footer/contactus.html"><p>Contact Us</p></a>
+            <a href="../footer/delivery.html"><p>Delivery</p></a>
+          </div>
+
+          <div class="footer2">
+            <p>We open daily 9am to 10pm!</p>
+            <p><a href="tel:+603 1000 1000">Phone:+603 1000 1000</a></p>
+            <p>
+              <a href="mailto:mrbakery@gmail.com">Email:mrbakery@gmail.com</a>
+            </p>
+          </div>
+          <div class="mrbakery">
+            <p class="mrbakery1">Mr Bakery</p>
+            <p class="mrbakery2">
+              Petaling Jaya, <br />53000, Kuala Lumpur, Malaysia.
+            </p>
+          </div>
+          <div class="footer-icon">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/?stype=lo&jlou=AfcFIovjHT1aS5YG9LOYstbUhKL0WxzpJZl2_10W14bQpnWdRrVIBfeeokVugnwa4Qcq9xZmCK-NWZeH5bN1fG4EjQYStIT7mAMLpWnw5cmPfA&smuh=593&lh=Ac92qSujogaQVrRL" id="fb"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=zh-cn" id="ins"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" id="yt"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/login" id="twi"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &#169; Mr Bakery 2020
+      </div>
+    </footer>
+  </body>
+</html>

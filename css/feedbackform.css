@@ -1,0 +1,101 @@
+.feedback {
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-form {
+  margin-top: 50px;
+  width: 85%;
+  max-width: 600px;
+  background: #f1f1f1;
+  border-radius: 25px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 30px #000000b3;
+  margin-bottom: 50px;
+}
+
+.feedback-form h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.form-emoji {
+  text-align: center;
+}
+
+.feedback-form ul a li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 16px;
+  background-color: rgb(236, 42, 74);
+  border-radius: 50px;
+  color: white;
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.feedback-form a li i:hover {
+  border-radius: 50px;
+  background-color: rgb(233, 176, 185);
+}
+
+.feedback-form a li i:visited {
+  border-radius: 50px;
+  background-color: rgb(233, 176, 185);
+}
+
+.form-button {
+  text-align: center;
+}
+
+#s1,
+#c1,
+#c2 {
+  background-color: rgb(245, 102, 126);
+  width: 150px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 5px solid;
+  border-color: rgb(218, 72, 97);
+  font-family: monospace;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-comment {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#comment {
+  display: block;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  outline: none;
+}
+
+#bttn {
+  background-color: rgb(245, 102, 126);
+  font-family: monospace;
+  color: white;
+  font-size: 20px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 50px;
+  outline: none;
+  border-color: rgb(218, 72, 97);
+  cursor: pointer;
+  margin-top: 20px;
+}

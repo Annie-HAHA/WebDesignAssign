@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Malaysia, mrbakery, Bakery, cake" />
+    <title>Mr Bakery</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="../css/keyun/baking-class.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db13e30a37.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="announcement">
+        <p style="text-align: center;">#DUDUKRUMAH #STAYATHOME #Covid-19</p>
+      </div>
+      <div class="main-map-gift">
+        <i
+          class="fa fa-map-marker fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/location.html'"
+        ></i>
+        <i
+          class="fa fa-gift fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/giftredeem.html'"
+        ></i>
+      </div>
+      <div class="main-logo">
+        <img
+          src="../images/logo.png"
+          alt="Mr Bakery Logo"
+          class="logo"
+          width="300"
+          height="300"
+        />
+      </div>
+      <div class="searchbar">
+        <input type="text" class="search" placeholder="Search..." />
+        <a href="#" id="search"><i class="fas fa-search"></i></a>
+        <i
+          class="fas fa-sign-in-alt fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/Login.html'"
+        ></i>
+        <i
+          class="fas fa-shopping-cart fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/addtocart.html'"
+        ></i>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/homepage.html">Home</a>
+        </li>
+        <li class="nav-item mx-2 dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Product Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('brownies', true)"
+              >Brownies</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('cheesecake', true)"
+              >Cheese Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('icecream', true)"
+              >Ice Cream Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('jellycake', true)"
+              >Jelly Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('macarons', true)"
+              >Macarons</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('tart', true)"
+              >Tarts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/customiz_form.html">Customize Cake</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../profile/profile.html">Member</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/promotion_newsalert.html">Promo</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/delivery.html">Delivery</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/jobvacancies.html">Job Vacancies Form</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/luckydraw1.html">Lucky Draw</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/catering.html">Catering</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/FAQ.html">FAQ</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/feedbackform.html">Feedback</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../bakingClass/class.html">Baking class</a>
+        </li>
+      </ul>
+    </nav>
+    <article class="bookingContainer">
+      <div class="bokingT"><h1>BOOKING CLASS</h1></div>
+      <form action="../jiarkee/payment.html" onsubmit="classBooking()">
+        <div class="row1">
+          <div class="col-25">
+            <label for="name"> Full Name <sup class="required">*</sup></label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="name"
+              name="fullname"
+              placeholder="Full name as i/c"
+              required
+            />
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-25">
+            <label for="gender"> Gender <sup class="required">*</sup></label>
+          </div>
+          <div class="col-25">
+            <label
+              ><input type="radio" value="male" name="gender" required /> Male
+            </label>
+            <label
+              ><input type="radio" value="female" name="gender" required />
+              Female
+            </label>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-25">
+            <label for="age"> Age <sup class="required">*</sup></label>
+          </div>
+          <div class="col-75">
+            <input
+              type="number"
+              id="age"
+              name="age"
+              value="13"
+              min="13"
+              max="100"
+              required
+            />
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-25">
+            <label for="type">
+              Type of Cake <sup class="required">*</sup></label
+            >
+          </div>
+          <div class="col-75">
+            <select id="btype" name="caketype" required onchange="classType()">
+              <option value=""> Select </option>
+              <option value="type1"> Chocolate Cake </option>
+              <option value="type2"> Oreo Cheesecake </option>
+              <option value="type3"> Mango Cheesecake </option>
+              <option value="type4"> Chocolate Switch Roll </option>
+              <option value="type5"> Green Tea Switch Roll </option>
+              <option value="type6"> Cupcake </option>
+            </select>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-25">
+            <label for="time"> Class <sup class="required">*</sup></label>
+          </div>
+          <div class="col-75">
+            <select id="time" name="classtime" required>
+              <option value=""> Select </option>
+              <option value="class1"> Mon 10am - 1pm </option>
+              <option value="class2"> Mon 2pm - 5pm </option>
+              <option value="class3"> Tue 10am - 1pm </option>
+              <option value="class4"> Tue 2pm - 5pm </option>
+              <option value="class5"> Wed 10am - 1pm </option>
+              <option value="class6"> Wed 2pm - 5pm </option>
+              <option value="class7"> Thur 10am - 1pm </option>
+              <option value="class8"> Thur 2pm - 5pm </option>
+              <option value="class9"> Fri 10am - 1pm </option>
+              <option value="class10"> Fri 2pm - 5pm </option>
+              <option value="class11"> Sat 10am - 1pm </option>
+              <option value="class12"> Sat 2pm - 5pm </option>
+              <option value="class13"> Sun 10am - 1pm </option>
+              <option value="class14"> Sun 2pm - 5pm </option>
+            </select>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-25">
+            <label for="email"> Email <sup class="required">*</sup></label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-25">
+            <label for="tel"> Tel no. <sup class="required">*</sup></label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="tel"
+              name="telno"
+              pattern="[0-9]{3}-[0-9]{7,8}"
+              placeholder="012-4407029"
+              required
+            />
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-25">
+            <label for="bprice"> Price </label>
+          </div>
+          <div class="col-75">
+            <p id="bprice"></p>
+          </div>
+        </div>
+        <br />
+        <div class="row1">
+          <div class="col-home">
+            <a href="../navBar/homepage.html"> Home </a>
+          </div>
+          <div>
+              <button type="submit" value="checkout" class="col-checkout">Proceed to check out</button>
+          </div>
+          <div>
+            <button type="reset" value="cancel" class="col-reset" id="reset">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </article>
+    <footer>
+      <div>
+        <div class="footer-signup">
+          <p>SIGN UP TO GET SPECIAL OFFERS AND UPDATES</p>
+          <div class="footer-mail">
+            <form>
+              <input
+                type="email"
+                id="footer-email"
+                placeholder="Enter email..."
+              />
+              <button type="button" id="footer-button">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer0">
+          <div class="footer1">
+            <a href="../footer/aboutus.html"><p>About Mr Bakery</p></a>
+            <a href="../footer/FAQ.html"><p>FAQ</p></a>
+            <a href="../footer/contactus.html"><p>Contact Us</p></a>
+            <a href="../footer/delivery.html"><p>Delivery</p></a>
+          </div>
+
+          <div class="footer2">
+            <p>We open daily 9am to 10pm!</p>
+            <p><a href="tel:+603 1000 1000">Phone:+603 1000 1000</a></p>
+            <p>
+              <a href="mailto:mrbakery@gmail.com">Email:mrbakery@gmail.com</a>
+            </p>
+          </div>
+          <div class="mrbakery">
+            <p class="mrbakery1">Mr Bakery</p>
+            <p class="mrbakery2">
+              Petaling Jaya, <br />53000, Kuala Lumpur, Malaysia.
+            </p>
+          </div>
+          <div class="footer-icon">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/?stype=lo&jlou=AfcFIovjHT1aS5YG9LOYstbUhKL0WxzpJZl2_10W14bQpnWdRrVIBfeeokVugnwa4Qcq9xZmCK-NWZeH5bN1fG4EjQYStIT7mAMLpWnw5cmPfA&smuh=593&lh=Ac92qSujogaQVrRL" id="fb"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=zh-cn" id="ins"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" id="yt"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/login" id="twi"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &#169; Mr Bakery 2020
+      </div>
+    </footer>
+  </body>
+  <script>
+    function classType() {
+      var x = document.getElementById("btype").value;
+      if (x == "type1" || x == "type2" || x == "type3") {
+        document.getElementById("bprice").innerHTML = "RM 250";
+      } else if (x == "type4" || x == "type5" || x == "type6") {
+        document.getElementById("bprice").innerHTML = "RM 200";
+      }
+    }
+
+    function classBooking() {
+      alert("You are submit successfully! Continue proceed to pay the bill.");
+    }
+
+  </script>
+</html>

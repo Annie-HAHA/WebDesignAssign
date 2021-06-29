@@ -1,0 +1,446 @@
+.bakingclass {
+    background-image: url('../../images/keyun/baking class.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bakingT {
+    margin: 0px 15% 0px 15%;
+    padding: 20px;
+}
+
+.bakingT h1{
+    color: black;
+    border-color: black;
+    border-radius: 6px;
+    border-style: solid;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
+    font-size: 30px;
+    margin: 30% 10% 10% 10%;
+    padding: 15px;
+}
+
+.bakingC {
+    background-color: rgb(236, 235, 235);
+    margin: 0;
+    padding: 0;
+}
+
+.bakingclassT {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+.baking-img {
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    padding: 60px;
+}
+
+.baking-img img{
+    border-radius: 10px;
+}
+
+.baking-img a:hover {
+    opacity: 90%;
+    color: magenta;
+}
+
+.baking-img a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+video {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+video[poster] {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+}
+
+.class-information {
+    margin: 10px 30% 30px 30%;
+}
+
+.class-information a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: solid;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 30% 10px 35%;
+    padding: 20px;
+}
+
+.class-information a:hover {
+    background-color: white;
+    color: black;
+}
+
+.classcol-1 {
+    float: left;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin: 20px;
+    width: 55%;
+}
+
+.classT {
+    border-collapse: collapse;
+    margin: 20px 10% 20px 10%;
+    width: 80%;
+}
+
+.classT,
+.classT td,
+.classT th {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.classtimetableT {
+    margin-left: 30%;
+    text-decoration: none;
+}
+
+.classcol-2 {
+    float: right;
+    background-color: lightgray;
+    color: black;
+    border-radius: 10px;
+    opacity: 80%;
+    width: 40%;
+    margin: 20px 20px 20px 0px;
+}
+
+.text-1 {
+    padding: 30px 0% 30px 120px;
+}
+
+.text-2 {
+    padding: 20px;
+}
+
+.text-2 h1 {
+    padding-left: 20px;
+}
+
+.text-2 ul li {
+    font-size: 17px;
+}
+
+.cake-img {
+    float: left;
+    margin: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cake-img img {
+    border-radius: 20px;
+}
+
+.prevCupcake, .nextCupcake {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    user-select: none;
+}
+
+.prevCupcake {
+    border-radius: 0 10px 10px 0;
+}
+
+.nextCupcake {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.prevCupcake:hover, .nextCupcake:hover {
+    background-color: grey;
+}
+
+.dots {
+    float: left;
+    margin-left: 40%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active, .dot:hover {
+    background-color: black;
+}
+
+.actinfo-1,
+.actinfo-2,
+.actinfo-3,
+.actinfo-4 {
+    background-color: white;
+    opacity: 80%;
+    float: left;
+    border: solid 2px black;
+    margin: 30px 0px 0px 40px;
+}
+
+.actinfo-1 {
+    padding: 20px 265px 20px 50px;
+}
+
+.actinfo-2 {
+    padding: 20px 25% 20px 50px;
+}
+
+.actinfo-3 {
+    padding: 20px 40px 20px 50px;
+}
+
+.actinfo-4 {
+    padding: 10px 25% 10px 50px;
+}
+
+.actinfo-1 h1,
+.actinfo-2 h1,
+.actinfo-3 h1,
+.actinfo-4 h1 {
+    font-size: 30px;
+}
+
+.actinfo-1 p,
+.actinfo-2 p,
+.actinfo-3 p,
+.actinfo-4 p {
+    font-size: 20px;
+}
+
+.abtclass {
+    background-color: lightgray;
+}
+
+.abtclassT {
+    text-align: center;
+}
+
+.abtclass hr {
+    border-color: black;
+    margin: 3px 0px 3px 0px;
+    padding: 0;
+}
+
+.abtclass-info {
+    margin: 20px 20% 10px 20%;
+    padding: 20px 13% 20px 13%;
+    background-color: rgb(167, 167, 167);
+    border-radius: 20px;
+    box-shadow: 0 0 8px plum, 0 0 15px rgba(211, 211, 211, 0.589);
+    border-color: 2px solid plum;
+}
+
+.abtclass-info p {
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+.abtclass-info ol {
+    font-size: 20px;
+}
+
+.col-back {
+    float: left;
+    margin: 0px 10px 30px 40%;
+}
+
+.col-book {
+    float: left;
+    margin: 0px 20% 30px 0px;
+}
+
+.col-back a,
+.col-book a,
+.col-home a,
+.col-checkout,
+.col-reset {
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.col-back a,
+.col-book a {
+    background-color: plum;
+    border: 2px solid plum;
+    color: white;
+}
+
+.col-back a:hover,
+.col-book a:hover {
+    background-color: violet;
+    color: black;
+}
+
+.col-back a:active,
+.col-book a:active {
+    background-color: lightpink;
+    box-shadow: 0 0 5px white, 0 0 8px lightgray;
+    border: none;
+    color: white;
+}
+
+.col-home {
+    float: left;
+    margin: 22px 10px 20px 25%;
+}
+
+.col-checkout {
+    float: left;
+    margin: 8px 0px 20px 0px;
+    padding: 11.5px 30px 11.5px 30px;
+}
+
+.col-reset {
+    float: left;
+    margin: 8px 0px 20px 10px;
+    padding: 11.5px 30px 11.5px 30px;
+}
+
+.col-home a {
+    padding: 12.5px 30px 12.5px 30px;
+    text-decoration: none;
+}
+
+.col-home a,
+.col-checkout,
+.col-reset {
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.col-home a:hover,
+.col-checkout:hover,
+.col-reset:hover {
+    color: black;
+    background-color: white;
+}
+
+.bookingContainer {
+    border-radius: 15px;
+    background-color: lightgrey;
+    opacity: 80%;
+    padding: 20px 50px 20px 50px;
+    margin: 20px 15% 20px 15%;
+}
+
+.bokingT {
+    font-weight: bold;
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+input[type=text], select {
+    width: 94%;
+    padding: 12px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=number] {
+    padding: 5px 0px 5px 15px;
+    width: 94%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+}
+
+select {
+    width: 94%;
+}
+
+.submit,
+.cancel {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-left: 300px;
+    margin-right: 10px;
+}
+
+.submit:hover,
+.cancel:hover {
+    background-color: grey;
+    color: black;
+}
+
+.age {
+    padding: 15px ;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.required {
+    color: red;
+}

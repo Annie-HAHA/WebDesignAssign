@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="feedback" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link href="../css/feedbackform.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/db13e30a37.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Mr Bakery</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="announcement">
+        <p style="text-align: center;">#DUDUKRUMAH #STAYATHOME #Covid-19</p>
+      </div>
+      <div class="main-map-gift">
+        <i
+          class="fa fa-map-marker fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/location.html'"
+        ></i>
+        <i
+          class="fa fa-gift fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/giftredeem.html'"
+        ></i>
+      </div>
+      <div class="main-logo">
+        <img
+          src="../images/logo.png"
+          alt="Mr Bakery Logo"
+          class="logo"
+          width="300"
+          height="300"
+        />
+      </div>
+      <div class="searchbar">
+        <input type="text" class="search" placeholder="Search..." />
+        <a href="#" id="search"><i class="fas fa-search"></i></a>
+        <i
+          class="fas fa-sign-in-alt fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/Login.html'"
+        ></i>
+        <i
+          class="fas fa-shopping-cart fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/addtocart.html'"
+        ></i>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/homepage.html">Home</a>
+        </li>
+        <li class="nav-item mx-2 dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Product Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('brownies', true)"
+              >Brownies</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('cheesecake', true)"
+              >Cheese Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('icecream', true)"
+              >Ice Cream Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('jellycake', true)"
+              >Jelly Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('macarons', true)"
+              >Macarons</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('tart', true)"
+              >Tarts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/customiz_form.html">Customize Cake</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../profile/profile.html">Member</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/promotion_newsalert.html">Promo</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/delivery.html">Delivery</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/jobvacancies.html">Job Vacancies Form</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/luckydraw1.html">Lucky Draw</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/catering.html">Catering</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/FAQ.html">FAQ</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/feedbackform.html">Feedback</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../bakingClass/class.html">Baking class</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="feedback">
+      <form method="POST" class="feedback-form">
+        <div class="form-1">
+          <h1>Send us your feedback!!</h1>
+        </div>
+
+        <div class="form-2">
+          <p>
+            We appreciate the time you have taken to help us improve our sites
+            and services. We value your opinion!!
+          </p>
+        </div>
+
+        <div class="form-emoji">
+          <p><b>How would you rate your experience on this site?</b></p>
+          <ul>
+            <a href="#"
+              ><li><i class="far fa-angry"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="far fa-frown"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="far fa-meh"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="far fa-laugh"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fab fa-gratipay"></i></li
+            ></a>
+          </ul>
+        </div>
+
+        <div class="form-button">
+          <p><b>Please select one of them:</b></p>
+          <input type="button" name="suggestion" id="s1" value="suggestion" />
+          <input type="button" name="complain" id="c1" value="complain" />
+          <input type="button" name="compliment" id="c2" value="compliment" />
+        </div>
+
+        <div class="form-comment">
+          <label for="comment"><b>Leave your comment below:</b></label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Write here...."
+          ></textarea>
+          <input type="button" name="bttn" id="bttn" value="Send" />
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div>
+        <div class="footer-signup">
+          <p>SIGN UP TO GET SPECIAL OFFERS AND UPDATES</p>
+          <div class="footer-mail">
+            <form>
+              <input
+                type="email"
+                id="footer-email"
+                placeholder="Enter email..."
+              />
+              <button type="button" id="footer-button">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer0">
+          <div class="footer1">
+            <a href="../footer/aboutus.html"><p>About Mr Bakery</p></a>
+            <a href="../footer/FAQ.html"><p>FAQ</p></a>
+            <a href="../footer/contactus.html"><p>Contact Us</p></a>
+            <a href="../footer/delivery.html"><p>Delivery</p></a>
+          </div>
+
+          <div class="footer2">
+            <p>We open daily 9am to 10pm!</p>
+            <p><a href="tel:+603 1000 1000">Phone:+603 1000 1000</a></p>
+            <p>
+              <a href="mailto:mrbakery@gmail.com">Email:mrbakery@gmail.com</a>
+            </p>
+          </div>
+          <div class="mrbakery">
+            <p class="mrbakery1">Mr Bakery</p>
+            <p class="mrbakery2">
+              Petaling Jaya, <br />53000, Kuala Lumpur, Malaysia.
+            </p>
+          </div>
+          <div class="footer-icon">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/?stype=lo&jlou=AfcFIovjHT1aS5YG9LOYstbUhKL0WxzpJZl2_10W14bQpnWdRrVIBfeeokVugnwa4Qcq9xZmCK-NWZeH5bN1fG4EjQYStIT7mAMLpWnw5cmPfA&smuh=593&lh=Ac92qSujogaQVrRL" id="fb"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=zh-cn" id="ins"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" id="yt"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/login" id="twi"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &#169; Mr Bakery 2020
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.star-rating {
+  font-size: 20px;
+}
+
+.star-dull {
+  color: #777;
+  cursor: pointer;
+}
+
+.star-light {
+  color: #fd0;
+  cursor: pointer;
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mr Bakery</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link href="../css/customize_form.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db13e30a37.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="announcement">
+        <p style="text-align: center;">#DUDUKRUMAH #STAYATHOME #Covid-19</p>
+      </div>
+      <div class="main-map-gift">
+        <i
+          class="fa fa-map-marker fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/location.html'"
+        ></i>
+        <i
+          class="fa fa-gift fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/giftredeem.html'"
+        ></i>
+      </div>
+      <div class="main-logo">
+        <img
+          src="../images/logo.png"
+          alt="Mr Bakery Logo"
+          class="logo"
+          width="300"
+          height="300"
+        />
+      </div>
+      <div class="searchbar">
+        <input type="text" class="search" placeholder="Search..." />
+        <a href="#" id="search"><i class="fas fa-search"></i></a>
+        <i
+          class="fas fa-sign-in-alt fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/Login.html'"
+        ></i>
+        <i
+          class="fas fa-shopping-cart fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/addtocart.html'"
+        ></i>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/homepage.html">Home</a>
+        </li>
+        <li class="nav-item mx-2 dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Product Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('brownies', true)"
+              >Brownies</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('cheesecake', true)"
+              >Cheese Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('icecream', true)"
+              >Ice Cream Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('jellycake', true)"
+              >Jelly Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('macarons', true)"
+              >Macarons</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('tart', true)"
+              >Tarts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/customiz_form.html">Customize Cake</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../profile/profile.html">Member</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/promotion_newsalert.html">Promo</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/delivery.html">Delivery</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/jobvacancies.html">Job Vacancies Form</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/luckydraw1.html">Lucky Draw</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/catering.html">Catering</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/FAQ.html">FAQ</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/feedbackform.html">Feedback</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../bakingClass/class.html">Baking class</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="formBody">
+      <h5>Customize Cake Form</h5>
+      <small>
+        *There are 6 product categories, any request please write in the box.
+      </small>
+      <br /><br />
+
+      <form
+        class="formPlace"
+        method="POST"
+        onsubmit="window.location.href = '../aboutLogin/addtocart.html'; return false;"
+      >
+        <h3 class="formFont">Personal Details</h3>
+        <label for="fname">
+          First name:
+        </label>
+        <input
+          type="text"
+          class="layerLabel"
+          id="fname"
+          name="fname"
+          size="20"
+        />
+        <label for="lname">
+          Last name:
+        </label>
+        <input
+          type="text"
+          class="layerLabel"
+          id="lname"
+          name="lname"
+          size="20"
+        />
+        <br /><br />
+        <label for="email">
+          Email:
+        </label>
+        <input
+          type="email"
+          class="layerLabel"
+          id="email"
+          name="email"
+          size="20"
+          required
+        />
+        <label for="phone">
+          Mobile Number:
+        </label>
+        <input
+          type="tel"
+          class="layerLabel"
+          id="phone"
+          name="phone"
+          size="20"
+          required
+        />
+        <br /><br />
+
+        <h5 class="formFont">Address:</h5>
+        <br />
+        <label for="addLine1">Street Address:</label> <br />
+        <input
+          type="text"
+          class="layerLabel"
+          id="addLine1"
+          name="addLine1"
+          size="50"
+          required
+        />
+        <br />
+        <label for="addLine2">Street Address Line 2:</label> <br />
+        <input
+          type="text"
+          class="layerLabel"
+          id="addLine2"
+          name="addLine2"
+          size="50"
+          required
+        />
+        <br />
+        <br />
+        <label for="addLine2">City:</label>
+        <input
+          type="text"
+          class="layerLabel"
+          id="city"
+          name="city"
+          size="30"
+          required
+        />
+        <label for="state">State:</label>
+        <input
+          type="text"
+          class="layerLabel"
+          id="state"
+          name="state"
+          size="30"
+          required
+        />
+        <br /><br />
+        <label for="postal">Postal:</label>
+        <input
+          type="text"
+          class="layerLabel"
+          id="postal"
+          name="postal"
+          size="30"
+          maxlength="5"
+          required
+        />
+        <br />
+        <br />
+
+        <h3 class="formFont">Customize</h3>
+        <hr />
+
+        <h3 class="formFont">Step 1: Layer</h3>
+        <br />
+        <input type="checkbox" id="layer1" name="layer" value="layer1" />
+        <label for="layer1" class="layerLabel">1 Layer</label>
+        <input type="checkbox" id="layer2" name="layer" value="layer2" />
+        <label for="layer2" class="layerLabel">2 Layer</label>
+        <input type="checkbox" id="layer3" name="layer" value="layer3" />
+        <label for="layer3" class="layerLabel">3 Layer</label>
+
+        <br /><br />
+
+        <h3 class="formFont">Step 2: Theme</h3>
+        <br />
+        <input type="checkbox" id="wedding" name="theme" value="wedding" />
+        <label for="wedding" class="layerLabel">Wedding</label>
+        <input type="checkbox" id="birthday" name="theme" value="birthday" />
+        <label for="birthday" class="layerLabel">Birthday</label>
+        <input
+          type="checkbox"
+          id="anniversary"
+          name="theme"
+          value="anniversary"
+        />
+        <label for="anniversary" class="layerLabel">Anniversary</label>
+        <input type="checkbox" id="festive" name="theme" value="festive" />
+        <label for="festive" class="layerLabel">Festive Season</label>
+        <input type="checkbox" id="baby" name="theme" value="baby" />
+        <label for="baby" class="layerLabel">Baby Shower</label>
+        <input type="checkbox" id="gender" name="theme" value="gender" />
+        <label for="gender" class="layerLabel">Gender Reveal</label>
+        <br />
+        <br />
+        <label for="other">Other(Please State Down Here</label>
+        <input
+          type="text"
+          class="layerLabel"
+          id="other"
+          name="theme"
+          size="20"
+        />
+        <br />
+        <br />
+
+        <h3 class="formFont">Step 3: How many pax</h3>
+        <br />
+        <input type="text" class="layerLabel" id="pax" name="pax" />
+        <br />
+        <br />
+
+        <h3 class="formFont">Step 4: Budget</h3>
+        <br />
+        <input type="text" class="layerLabel" id="budget" name="budget" />
+        <br />
+        <br />
+
+        <h3 class="formFont">Step 5: Delivery/Pick Up</h3>
+        <br />
+        <input type="checkbox" id="delivery" name="deliver" value="deliver" />
+        <label for="deliver" class="layerLabel">Deliver</label>
+        <input type="checkbox" id="pickUp" name="pickUp" value="pickUp" />
+        <label for="pickUp" class="layerLabel">Pick Up</label>
+        <br />
+        <br />
+        <label for="dateTime">Select a Date</label>
+        <input type="date" class="layerLabel" id="time" name="time" />
+        <br /><br />
+        <label for="time">Enter a Time</label>
+        <input type="time" class="layerLabel" id="time" name="time" />
+        <br />
+        <br />
+
+        <h3 class="formFont">Additional Requirement</h3>
+        <br />
+        <textarea
+          class="layerLabel"
+          name="remark"
+          rows="5"
+          cols="50"
+        ></textarea>
+        <br />
+        <br />
+
+        <input
+          id="submitBtn"
+          type="submit"
+          class="layerLabel"
+          value="Add To Cart"
+        />
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div>
+        <div class="footer-signup">
+          <p>SIGN UP TO GET SPECIAL OFFERS AND UPDATES</p>
+          <div class="footer-mail">
+            <form>
+              <input
+                type="email"
+                id="footer-email"
+                placeholder="Enter email..."
+              />
+              <button type="submit" id="footer-button">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer0">
+          <div class="footer1">
+            <a href="../footer/aboutus.html"><p>About Mr Bakery</p></a>
+            <a href="../footer/FAQ.html"><p>FAQ</p></a>
+            <a href="../footer/contactus.html"><p>Contact Us</p></a>
+            <a href="../footer/delivery.html"><p>Delivery</p></a>
+          </div>
+
+          <div class="footer2">
+            <p>We open daily 9am to 10pm!</p>
+            <p><a href="tel:+603 1000 1000">Phone:+603 1000 1000</a></p>
+            <p>
+              <a href="mailto:mrbakery@gmail.com">Email:mrbakery@gmail.com</a>
+            </p>
+          </div>
+          <div class="mrbakery">
+            <p class="mrbakery1">Mr Bakery</p>
+            <p class="mrbakery2">
+              Petaling Jaya, <br />53000, Kuala Lumpur, Malaysia.
+            </p>
+          </div>
+          <div class="footer-icon">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/?stype=lo&jlou=AfcFIovjHT1aS5YG9LOYstbUhKL0WxzpJZl2_10W14bQpnWdRrVIBfeeokVugnwa4Qcq9xZmCK-NWZeH5bN1fG4EjQYStIT7mAMLpWnw5cmPfA&smuh=593&lh=Ac92qSujogaQVrRL" id="fb"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=zh-cn" id="ins"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" id="yt"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/login" id="twi"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &#169; Mr Bakery 2020
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>

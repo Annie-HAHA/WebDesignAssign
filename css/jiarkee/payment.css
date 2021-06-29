@@ -1,0 +1,66 @@
+.container h1 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding: 10 0 10 15;
+    box-sizing: border-box;
+    width: 60%;
+    border-bottom: 1px solid black;
+    margin-left: 20%;
+    margin-bottom: 0;
+  }
+  .container label {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: large;
+    color: indigo;
+    padding-left: 5;
+  }
+  .container input[type="text"] {
+    width: 100%;
+    padding: 13 0 13 15;
+    margin: 10 0 20 0;
+    box-sizing: border-box;
+    border: lightgrey 1px solid;
+    border-radius: 1px;
+    background-color: white;
+  }
+  .container input[type="tel"],
+  .container input[type="email"],
+  .container select {
+    width: 100%;
+    padding: 13 0 13 15;
+    margin: 10 0 20 0;
+    box-sizing: border-box;
+    border: lightgrey 1px solid;
+    border-radius: 1px;
+    background-color: white;
+  }
+  .container button {
+    width: 15%;
+    padding: 15;
+    margin-top: 10;
+    margin-left: 85%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1px;
+    color: white;
+    background-color: forestgreen;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .container button:hover {
+    background-color: darkgreen;
+  }
+  .box {
+    box-sizing: border-box;
+    width: 60%;
+    margin-left: 20%;
+    padding: 10;
+  }
+  .container table {
+    width: 100%;
+  }
+  .container fieldset {
+    padding: 30px;
+  }
+  .container legend {
+    width: 30%;
+  }

@@ -1,0 +1,64 @@
+.container h1 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding: 10 0 10 15;
+    box-sizing: border-box;
+    width: 60%;
+    border-bottom: 1px solid black;
+    margin-left: 20%;
+  }
+  .container label {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: large;
+    color: indigo;
+    padding-left: 5;
+  }
+  .container input[type="text"],
+  .container input[type="email"] {
+    width: 100%;
+    padding: 13 0 13 15;
+    margin: 10 0 20 0;
+    box-sizing: border-box;
+    border: lightgray 1px solid;
+    border-radius: 1px;
+    background-color: white;
+  }
+  .container textarea {
+    width: 100%;
+    height: 30%;
+    padding: 13 0 13 15;
+    margin: 10 0 20 0;
+    box-sizing: border-box;
+    border: lightgrey 1px solid;
+    border-radius: 1px;
+    background-color: white;
+    resize: vertical;
+  }
+  .container button {
+    width: 15%;
+    padding: 15;
+    margin-left: 85%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1px;
+    color: white;
+    background-color: forestgreen;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .container button:hover {
+    background-color: darkgreen;
+  }
+  .box {
+    box-sizing: border-box;
+    width: 60%;
+    margin-left: 20%;
+    padding: 10;
+  }
+  .container table {
+    margin-bottom: 10;
+  }
+  .container td {
+    width: 30%;
+    padding: 10 10 10 10;
+    text-align: center;
+  }

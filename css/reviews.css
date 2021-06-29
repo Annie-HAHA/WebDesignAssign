@@ -1,0 +1,35 @@
+.myreviews {
+  margin-bottom: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.myreviews h5 {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.myreviews-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding: 10px;
+  border: 1px solid rgb(173, 167, 167);
+}
+
+.reviews-info {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.reviews-info img {
+  width: 150px;
+  height: 150px;
+}
+
+.reviews .row {
+  display: flex;
+  flex-direction: row;
+}

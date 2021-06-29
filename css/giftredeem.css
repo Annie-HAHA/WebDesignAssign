@@ -1,0 +1,39 @@
+.giftBody {
+  margin-bottom: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.giftBody h5 {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.gifts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gift {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.gift a {
+  text-align: center;
+}
+
+.gift img {
+  width: 500px;
+}
+
+.giftdesc {
+  text-align: center;
+}
+
+.gift img:hover {
+  width: 600px;
+}

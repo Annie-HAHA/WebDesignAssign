@@ -1,0 +1,39 @@
+.container {
+    width: 90% !important;
+    margin: 20px 0 50px 0;
+}
+
+.homeContainer {
+    margin-left: 5%;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-50 {
+    float: left;
+    width: 30%;
+    margin: 20px 0px 20px 150px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.col-50 img {
+    border-radius: 10px;
+}
+
+.col-50 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.col-50 a:hover {
+    color: fuchsia;
+    opacity: 90%;
+}

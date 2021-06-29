@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mr Bakery</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db13e30a37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flamenco&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="announcement">
+        <p style="text-align: center;">#DUDUKRUMAH #STAYATHOME #Covid-19</p>
+      </div>
+      <div class="main-map-gift">
+        <i
+          class="fa fa-map-marker fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/location.html'"
+        ></i>
+        <i
+          class="fa fa-gift fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../navBar/giftredeem.html'"
+        ></i>
+      </div>
+      <div class="main-logo">
+        <img
+          src="../images/logo.png"
+          alt="Mr Bakery Logo"
+          class="logo"
+          width="300"
+          height="300"
+        />
+      </div>
+      <div class="searchbar">
+        <input type="text" class="search" placeholder="Search..." />
+        <a href="#" id="search"><i class="fas fa-search"></i></a>
+        <i
+          class="fas fa-sign-in-alt fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/Login.html'"
+        ></i>
+        <i
+          class="fas fa-shopping-cart fa-2x p-2 main-icon"
+          aria-hidden="true"
+          onclick="window.location.href = '../aboutLogin/addtocart.html'"
+        ></i>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/homepage.html">Home</a>
+        </li>
+        <li class="nav-item mx-2 dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Product Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('brownies', true)"
+              >Brownies</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('cheesecake', true)"
+              >Cheese Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('icecream', true)"
+              >Ice Cream Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('jellycake', true)"
+              >Jelly Cakes</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('macarons', true)"
+              >Macarons</a
+            >
+            <a
+              class="dropdown-item"
+              href="#btnContainer"
+              onclick="filter('tart', true)"
+              >Tarts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/customiz_form.html">Customize Cake</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../profile/profile.html">Member</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/promotion_newsalert.html">Promo</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/delivery.html">Delivery</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/jobvacancies.html">Job Vacancies Form</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/luckydraw1.html">Lucky Draw</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/catering.html">Catering</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../footer/FAQ.html">FAQ</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../navBar/feedbackform.html">Feedback</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="../bakingClass/class.html">Baking class</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- slideshow -->
+    <div class="slideshow">
+      <div class="slides fade">
+        <div class="text-number">1/3</div>
+        <img src="../images/slideshow/delicious-cake.jpg" style="width: 100%;" />
+        <div class="text">WELCOME</div>
+      </div>
+
+      <div class="slides fade" style="display: none;">
+        <div class="text-number">2/3</div>
+        <img src="../images/slideshow/colorful-dessert.jpg" style="width: 100%;" />
+        <div class="text">TO</div>
+      </div>
+
+      <div class="slides fade" style="display: none;">
+        <div class="text-number">3/3</div>
+        <img src="../images/slideshow/birthday-wish.jpg" style="width: 100%;" />
+        <div class="text">MR BAKERY</div>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Gallery -->
+    <div class="main">
+      <hr />
+      <h2>Cakes</h2>
+      <div id="btnContainer">
+        <button id="btn-all" class="btn active" onclick="filter('all')">
+          All Cakes
+        </button>
+        <button id="btn-brownies" class="btn" onclick="filter('brownies')">
+          Brownies
+        </button>
+        <button id="btn-cheesecake" class="btn" onclick="filter('cheesecake')">
+          Cheese Cakes
+        </button>
+        <button id="btn-icecream" class="btn" onclick="filter('icecream')">
+          Ice Cream Cakes
+        </button>
+        <button id="btn-jellycake" class="btn" onclick="filter('jellycake')">
+          Jelly Cakes
+        </button>
+        <button id="btn-macarons" class="btn" onclick="filter('macarons')">
+          Macarons
+        </button>
+        <button id="btn-tart" class="btn" onclick="filter('tart')">
+          Tarts
+        </button>
+      </div>
+      <div class="row">
+        <div class="column icecream">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/icecreamcake/BlackForestIceCreamCake.html'"
+          >
+            <img
+              src="../images/gallery/iceCreamCake/black-forest-cake.jpg"
+              alt="Ice Cream Cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Black Forest Cake</h4>
+            <b>RM100.00</b>
+          </div>
+        </div>
+
+        <div class="column icecream">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/icecreamcake/ChocolateIceCreamCake.html'"
+          >
+            <img
+              src="../images/gallery/iceCreamCake/chocolate.jpg"
+              alt="Ice Cream Cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Chocolate Cake</h4>
+            <b>RM80.00</b>
+          </div>
+        </div>
+
+        <div class="column icecream">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/icecreamcake/OreoCookiesIceCreamCake.html'"
+          >
+            <img
+              src="../images/gallery/iceCreamCake/cookies-ice-cream-cake.jpg"
+              alt="Ice Cream Cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Oreo Cake</h4>
+            <b>RM84.00</b>
+          </div>
+        </div>
+        <div class="column icecream">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/icecreamcake/GrainDairyIceCreamCake.html'"
+          >
+            <img
+              src="../images/gallery/iceCreamCake/ice-cream-cake-recipe.jpg"
+              alt="Ice Cream Cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Oreo Ice Cream Cake</h4>
+            <b>RM120.00</b>
+          </div>
+        </div>
+
+        <div class="column icecream">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/icecreamcake/OreoBrookieIceCreamCake.html'"
+          >
+            <img
+              src="../images/gallery/iceCreamCake/Oreo-Brookie-Ice-Cream-Cake.jpg"
+              alt="Ice Cream Cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Oreo Brookie Cake</h4>
+            <b>RM110.00</b>
+          </div>
+        </div>
+
+        <div class="column macarons">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/macaron/PremiumMacaron.html'"
+          >
+            <img
+              src="../images/gallery/macarons/premium-macarons.jpg"
+              alt="Macarons"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Macoron (6pcs)</h4>
+            <b>RM50.00</b>
+          </div>
+        </div>
+        <div class="column macarons">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/macaron/MacaronsWhiteChocolateGanache.html'"
+          >
+            <img
+              src="../images/gallery/macarons/Macarons_White_Chocolate_Ganache.jpg"
+              alt="Macarons"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Macarons With White Ganache</h4>
+            <b>RM50.00</b>
+          </div>
+        </div>
+
+        <div class="column macarons">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/macaron/ChocoCoffeeMacaron.html'"
+          >
+            <img src="../images/gallery/macarons/macaron.jpg" alt="Macarons" />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Chocolate and Coffee Macaron</h4>
+            <b>RM40.00</b>
+          </div>
+        </div>
+
+        <div class="column macarons">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/macaron/CoffeeMacarons.html'"
+          >
+            <img
+              src="../images/gallery/macarons/coffe-macarons.jpg"
+              alt="Macarons"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Coffee macoron</h4>
+            <b>RM45.00</b>
+          </div>
+        </div>
+        <div class="column jellycake">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/jelly/CherryJelly.html'"
+          >
+            <img
+              src="../images/gallery/jellycake/cherry-jelly .jpg"
+              alt="Jelly Cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Cherry and Lemon Jelly Cake</h4>
+            <b>RM110.00</b>
+          </div>
+        </div>
+
+        <div class="column tart">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/tart/PearFrangipaneTart.html'"
+          >
+            <img
+              src="../images/gallery/tart/pear-frangipane-tart.jpg"
+              alt="Tart"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Pear Frangipane Tart 6.5"</h4>
+            <b>RM90.00</b>
+          </div>
+        </div>
+        <div class="column cheesecake">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/cheesecake/BlackberryCheesecake.html'"
+          >
+            <img
+              src="../images/gallery/cheesecake/blackberry.jpg"
+              alt="Cheese Cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Blackberry Cheesecake</h4>
+            <b>RM70.00</b>
+          </div>
+        </div>
+
+        <div class="column cheesecake">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/cheesecake/GingernutCheesecake.html'"
+          >
+            <img
+              src="../images/gallery/cheesecake/Gingernut-Cheesecake.jpg"
+              alt=""
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Creamy Ginger Nut Cheesecake</h4>
+            <b>RM75.00</b>
+          </div>
+        </div>
+
+        <div class="column brownies">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/brownies/ChocolateBrownies.html'"
+          >
+            <img
+              src="../images/gallery/brownies/chocolateBrownies.jpg"
+              alt="Brownies"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Chocolate Brownies</h4>
+            <b>RM40.00</b>
+          </div>
+        </div>
+        <div class="column brownies">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/brownies/MMBBrownies.html'"
+          >
+            <img src="../images/gallery/brownies/MMBrownies.jpg" alt="Brownies" />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>M&M's Brownies</h4>
+            <b>RM45.00</b>
+          </div>
+        </div>
+
+        <div class="column jellycake">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/jelly/TsumtsumJelly.html'"
+          >
+            <img src="../images/gallery/jellycake/tsumtsum.jpg" alt="Jelly Cake" />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Tsum Tsum Design Jelly Cake</h4>
+            <b>RM95.00</b>
+          </div>
+        </div>
+
+        <div class="column jellycake">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/jelly/GalaxyClearJelly.html'"
+          >
+            <img
+              src="../images/gallery/jellycake/galaxy clear - jelly cake.jpg"
+              alt="Jelly cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Tasty Galaxy Clear Jelly Cake</h4>
+            <b>RM120.00</b>
+          </div>
+        </div>
+        <div class="column jellycake">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/jelly/PeachJelly.html'"
+          >
+            <img
+              src="../images/gallery/jellycake/jelly-cake.jpg"
+              alt="Jelly cake"
+            />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Jelly Cake and Peach Trifle</h4>
+            <b>RM45.00</b>
+          </div>
+        </div>
+
+        <div class="column tart">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/tart/MiniFruitTart.html'"
+          >
+            <img src="../images/gallery/tart/Mini-Fruit-Tarts.jpg" alt="Tart" />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Mini Fruit Tart</h4>
+            <b>RM27.00</b>
+          </div>
+        </div>
+
+        <div class="column tart">
+          <div
+            class="content"
+            onclick="window.location.href = 'products/tart/FruitTart.html'"
+          >
+            <img src="../images/gallery/tart/fruittart.jpg" alt="Tart" />
+            <br />
+            <br />
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <h4>Fresh Fruit Tart</h4>
+            <b>RM43.00</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div>
+        <div class="footer-signup">
+          <p>SIGN UP TO GET SPECIAL OFFERS AND UPDATES</p>
+          <div class="footer-mail">
+            <form>
+              <input
+                type="email"
+                id="footer-email"
+                placeholder="Enter email..."
+              />
+              <button type="button" id="footer-button">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer0">
+          <div class="footer1">
+            <a href="../footer/aboutus.html"><p>About Mr Bakery</p></a>
+            <a href="../footer/FAQ.html"><p>FAQ</p></a>
+            <a href="../footer/contactus.html"><p>Contact Us</p></a>
+            <a href="../footer/delivery.html"><p>Delivery</p></a>
+          </div>
+
+          <div class="footer2">
+            <p>We open daily 9am to 10pm!</p>
+            <p><a href="tel:+603 1000 1000">Phone:+603 1000 1000</a></p>
+            <p>
+              <a href="mailto:mrbakery@gmail.com">Email:mrbakery@gmail.com</a>
+            </p>
+          </div>
+          <div class="mrbakery">
+            <p class="mrbakery1">Mr Bakery</p>
+            <p class="mrbakery2">
+              Petaling Jaya, <br />53000, Kuala Lumpur, Malaysia.
+            </p>
+          </div>
+          <div class="footer-icon">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/?stype=lo&jlou=AfcFIovjHT1aS5YG9LOYstbUhKL0WxzpJZl2_10W14bQpnWdRrVIBfeeokVugnwa4Qcq9xZmCK-NWZeH5bN1fG4EjQYStIT7mAMLpWnw5cmPfA&smuh=593&lh=Ac92qSujogaQVrRL" id="fb"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=zh-cn" id="ins"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" id="yt"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/login" id="twi"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &#169; Mr Bakery 2020
+      </div>
+    </footer>
+    <!-- footer -->
+    <script type="text/javascript" src="scripts/slides.js"></script>
+    <script>
+      showSlides(0);
+      addFilterButtonListener();
+      filter("all");
+    </script>
+  </body>
+</html>

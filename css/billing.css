@@ -1,0 +1,24 @@
+.button-print {
+  margin-right: 10px;
+  background-color: burlywood;
+  float: right;
+  margin-top: 20px;
+}
+
+.receipt {
+  margin-bottom: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-bottom: 20px;
+}
+
+.receipt h5 {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.receipt-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
